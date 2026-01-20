@@ -1,0 +1,13 @@
+name: scheduletime
+
+on:
+  schedule:
+    - cron: "*/5 * * * *"
+
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: print message
+        run: echo "schedule time every 5 minutes"
